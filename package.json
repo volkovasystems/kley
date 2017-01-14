@@ -1,0 +1,44 @@
+{
+  "name": "kley",
+  "version": "0.0.0",
+  "description": "Class construction through key evaluation.",
+  "main": "kley.js",
+  "support": "kley.support.js",
+  "deploy": "kley.deploy.js",
+  "scripts": {
+    "build": "babel kley.js -o kley.support.js && webpack",
+    "test": "mocha kley-test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/kley.git"
+  },
+  "keywords": [
+    "class",
+    "construction",
+    "key",
+    "evaluation",
+    "kley"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/kley/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/kley#readme",
+  "dependencies": {
+    "babel-runtime": "^6.20.0",
+    "outre": "^0.6.0",
+    "plough": "^0.5.0",
+    "protype": "^0.8.0",
+    "truky": "^0.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-latest": "^6.16.0",
+    "source-map-loader": "^0.1.6",
+    "webpack": "^1.14.0"
+  }
+}
