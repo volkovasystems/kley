@@ -59,6 +59,7 @@ const outre = require( "outre" );
 const plough = require( "plough" );
 const protype = require( "protype" );
 const truky = require( "truky" );
+const truly = require( "truly" );
 
 const kley = function kley( list ){
 	/*;
@@ -74,7 +75,7 @@ const kley = function kley( list ){
 		@end-meta-configuration
 	*/
 
- 	return outre( plough( plough( arguments ).map( ( item ) => {
+ 	return outre( plough( plough( arguments ).filter( truly ).map( ( item ) => {
 		let itemType = protype( item );
 
 		if( itemType.STRING ){
@@ -86,7 +87,7 @@ const kley = function kley( list ){
 		}else{
 			throw new Error( "invalid class construction key" );
 		}
-	} ) ) );
+	} ) ).filter( truly ) );
 };
 
 module.exports = kley;

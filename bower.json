@@ -1,6 +1,6 @@
 {
   "name": "kley",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Class construction through key evaluation.",
   "main": "kley.js",
   "support": "kley.support.js",
@@ -28,6 +28,7 @@
     "plough": "^0.5.0",
     "protype": "^0.8.0",
     "truky": "^0.2.0",
-    "outre": "^0.6.0"
+    "outre": "^0.6.0",
+    "truly": "^0.5.0"
   }
 }
