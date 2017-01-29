@@ -1,12 +1,13 @@
 {
   "name": "kley",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Class construction through key evaluation.",
   "main": "kley.js",
   "support": "kley.support.js",
   "deploy": "kley.deploy.js",
   "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -25,10 +26,10 @@
     "tests"
   ],
   "dependencies": {
-    "plough": "^0.5.0",
-    "protype": "^0.8.0",
-    "truky": "^0.2.0",
-    "outre": "^0.6.0",
-    "truly": "^0.5.0"
+    "outre": "^0.8.0",
+    "plough": "^0.9.0",
+    "protype": "^0.11.0",
+    "truky": "^0.3.0",
+    "truly": "^0.9.0"
   }
 }
