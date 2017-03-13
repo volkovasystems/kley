@@ -1,2 +1,2 @@
 # kley
-Class construction through key evaluation.
+HTML class attribute construction through key evaluation.

@@ -20,4 +20,5 @@ plough \
 protype \
 truky \
 truly \
---save
+--save \
+--force-latest

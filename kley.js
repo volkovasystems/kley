@@ -34,9 +34,9 @@
 			"file": "kley.js",
 			"module": "kley",
 			"author": "Richeve S. Bebedor",
-            "contributors": [
-            	"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
-            ],
+			"contributors": [
+				"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+			],
 			"eMail": "richeve.bebedor@gmail.com",
 			"repository": "https://github.com/volkovasystems/kley.git",
 			"test": "kley-test.js",
@@ -45,7 +45,7 @@
 	@end-module-configuration
 
 	@module-documentation:
-		Class construction through key evaluation.
+		HTML class attribute construction through key evaluation.
 	@end-module-documentation
 
 	@include:
@@ -53,7 +53,8 @@
 			"outre": "outre",
 			"plough": "plough",
 			"protype": "protype",
-			"truky": "truky"
+			"truky": "truky",
+			"truly": "truly"
 		}
 	@end-include
 */
@@ -69,26 +70,24 @@ const kley = function kley( list ){
 		@meta-configuration:
 			{
 				"list:required": [
+					Array,
 					"object",
 					"string",
-					"...",
-					Array
+					"..."
 				]
 			}
 		@end-meta-configuration
 	*/
 
- 	return outre( plough( plough( arguments ).filter( truly ).map( ( item ) => {
-		let itemType = protype( item );
-
-		if( itemType.STRING ){
+	return outre( plough( plough( arguments ).filter( truly ).map( ( item ) => {
+		if( protype( item, STRING ) ){
 			return item;
 
-		}else if( itemType.OBJECT || itemType.FUNCTION ){
+		}else if( protype( item, OBJECT, FUNCTION ) ){
 			return truky( item );
 
 		}else{
-			throw new Error( "invalid class construction key" );
+			throw new Error( "invalid class attribute construction key" );
 		}
 	} ) ).filter( truly ) );
 };
