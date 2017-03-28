@@ -1,10 +1,9 @@
 {
   "name": "kley",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "HTML class attribute construction through key evaluation.",
-  "main": "kley.js",
+  "main": "kley.deploy.js",
   "support": "kley.support.js",
-  "deploy": "kley.deploy.js",
   "authors": [
     "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
     "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
@@ -25,19 +24,11 @@
     "test",
     "tests"
   ],
-  "resolutions": {
-    "truly": "^0.15.0",
-    "protype": "^0.19.0",
-    "harden": "^0.17.0",
-    "doubt": "^0.21.0",
-    "cemento": "^0.13.0",
-    "stringe": "^0.1.0"
-  },
   "dependencies": {
-    "outre": "^0.13.0",
-    "plough": "^0.19.0",
-    "protype": "^0.19.0",
-    "truky": "^0.3.0",
-    "truly": "^0.15.0"
+    "outre": "^0.15.0",
+    "plough": "^0.21.0",
+    "protype": "^0.21.0",
+    "truky": "^0.4.0",
+    "truly": "^0.17.0"
   }
 }
