@@ -1,6 +1,6 @@
 {
   "name": "kley",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "HTML class attribute construction through key evaluation.",
   "main": "kley.deploy.js",
   "support": "kley.support.js",
@@ -25,8 +25,8 @@
     "tests"
   ],
   "dependencies": {
-    "outre": "^0.17.0",
-    "plough": "^0.23.0",
+    "outre": "^0.18.0",
+    "plough": "^0.25.0",
     "protype": "^0.21.0",
     "truky": "^0.5.0",
     "truly": "^0.18.0"
