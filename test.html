@@ -1,8 +1,27 @@
+<!DOCTYPE html>
 <html>
 	<head>
-		<script
-			type="application/javascript"
-			src="./kley.deploy.js">
-		</script>
+		<title>kley unit test</title>
+
+		<link rel="stylesheet" href="https://code.jquery.com/qunit/qunit-2.3.2.css">
+
+		<script type="application/javascript" src="https://code.jquery.com/qunit/qunit-2.3.2.js"></script>
+
+		<script type="application/javascript" src="./kley.deploy.js"></script>
 	</head>
+
+	<body>
+		<div id="qunit"></div>
+
+		<div id="qunit-fixture"></div>
+
+		<script type="application/javascript">
+			QUnit.test( "kley unit test", function( assert ) {
+
+				assert.deepEqual( kley( { "hello": "world" }, "yeah", [ "ugh" ], { "hello": true } ),
+									[ 'world', 'yeah', 'ugh', 'hello' ], "should be deeply equal" );
+
+			} );
+		</script>
+	</body>
 </html>
