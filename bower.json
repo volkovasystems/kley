@@ -1,35 +1,28 @@
 {
-  "name": "kley",
-  "version": "0.9.0",
-  "description": "HTML class attribute construction through key evaluation.",
-  "main": "kley.deploy.js",
-  "support": "kley.support.js",
-  "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
-    "Vinse Vinalon <vinsevinalon@gmail.com>"
-  ],
-  "license": "MIT",
-  "keywords": [
-    "class",
-    "construction",
-    "key",
-    "evaluation",
-    "kley"
-  ],
-  "homepage": "https://github.com/volkovasystems/kley",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "outre": "^0.22.0",
-    "plough": "^0.29.0",
-    "protype": "^0.24.0",
-    "truky": "^0.9.0",
-    "truly": "^0.20.0"
-  }
+	"name": "kley",
+	"version": "0.9.0",
+	"description": "HTML class attribute construction through key evaluation.",
+	"main": "kley.deploy.js",
+	"support": "kley.support.js",
+	"authors": [
+		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
+	],
+	"license": "MIT",
+	"keywords": [
+		"class",
+		"construction",
+		"key",
+		"evaluation",
+		"kley"
+	],
+	"homepage": "https://github.com/volkovasystems/kley",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"test",
+		"tests"
+	]
 }
