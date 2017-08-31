@@ -66,6 +66,15 @@ const kley = require( "./kley.js" );
 
 describe( "kley", ( ) => {
 
+	describe( "`kley( { 'hello': 'world' }, 'yeah', [ 'ugh' ], { 'hello': true } )`", ( ) => {
+		it( "should be equal to [ 'world', 'yeah', 'ugh', 'hello' ]", ( ) => {
+
+			assert.deepEqual( kley( { "hello": "world" }, "yeah", [ "ugh" ], { "hello": true } ),
+				[ "world", "yeah", "ugh", "hello" ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-server

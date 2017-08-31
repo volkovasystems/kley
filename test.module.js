@@ -70,6 +70,15 @@ const path = require( "path" );
 
 describe( "kley", ( ) => {
 
+	describe( "`kley( { 'hello': 'world' }, 'yeah', [ 'ugh' ], { 'hello': true } )`", ( ) => {
+		it( "should be equal to [ 'world', 'yeah', 'ugh', 'hello' ]", ( ) => {
+
+			assert.deepEqual( kley( { "hello": "world" }, "yeah", [ "ugh" ], { "hello": true } ),
+				[ "world", "yeah", "ugh", "hello" ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-server
@@ -79,6 +88,15 @@ describe( "kley", ( ) => {
 
 describe( "kley", ( ) => {
 
+	describe( "`kley( { 'hello': 'world' }, 'yeah', [ 'ugh' ], { 'hello': true } )`", ( ) => {
+		it( "should be equal to [ 'world', 'yeah', 'ugh', 'hello' ]", ( ) => {
+
+			assert.deepEqual( kley( { "hello": "world" }, "yeah", [ "ugh" ], { "hello": true } ),
+				[ "world", "yeah", "ugh", "hello" ] );
+
+		} );
+	} );
+
 } );
 
 //: @end-client
@@ -87,6 +105,24 @@ describe( "kley", ( ) => {
 //: @bridge:
 
 describe( "kley", ( ) => {
+
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
+
+	describe( "`kley( { 'hello': 'world' }, 'yeah', [ 'ugh' ], { 'hello': true } )`", ( ) => {
+		it( "should be equal to [ 'world', 'yeah', 'ugh', 'hello' ]", ( ) => {
+			//: @ignore:
+			let result = browser.url( bridgeURL ).execute(
+
+				function( ){
+					return JSON.stringify( kley( { "hello": "world" }, "yeah", [ "ugh" ], { "hello": true } ) );
+				}
+
+			).value;
+			//: @end-ignore
+			assert.deepEqual( JSON.parse( result ), [ "world", "yeah", "ugh", "hello" ] );
+
+		} );
+	} );
 
 } );
 

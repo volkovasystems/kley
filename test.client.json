@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-08-31T05:28:06.979Z",
+	"end": "2017-08-31T05:28:49.322Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "kley",
+			"duration": 0,
+			"start": "2017-08-31T05:28:49.018Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "kley",
+			"duration": 121,
+			"start": "2017-08-31T05:28:49.019Z",
+			"end": "2017-08-31T05:28:49.140Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-08-31T05:28:49.021Z",
+					"end": "2017-08-31T05:28:49.021Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "kley",
+					"associatedTest": "should be equal to [ 'world', 'yeah', 'ugh', 'hello' ]"
+				},
+				{
+					"start": "2017-08-31T05:28:49.139Z",
+					"end": "2017-08-31T05:28:49.140Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "kley",
+					"associatedTest": "should be equal to [ 'world', 'yeah', 'ugh', 'hello' ]"
+				},
+				{
+					"start": "2017-08-31T05:28:49.140Z",
+					"end": "2017-08-31T05:28:49.140Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "kley"
+				}
+			]
+		},
+		{
+			"name": "`kley( { 'hello': 'world' }, 'yeah', [ 'ugh' ], { 'hello': true } )`",
+			"duration": 120,
+			"start": "2017-08-31T05:28:49.020Z",
+			"end": "2017-08-31T05:28:49.140Z",
+			"tests": [
+				{
+					"name": "should be equal to [ 'world', 'yeah', 'ugh', 'hello' ]",
+					"start": "2017-08-31T05:28:49.020Z",
+					"end": "2017-08-31T05:28:49.139Z",
+					"duration": 119,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}

@@ -1,16 +1,32 @@
 {
-  "stats": {
-    "suites": 0,
-    "tests": 0,
-    "passes": 0,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-29T06:12:27.551Z",
-    "end": "2017-08-29T06:12:27.551Z",
-    "duration": 0
-  },
-  "tests": [],
-  "pending": [],
-  "failures": [],
-  "passes": []
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-31T05:28:05.567Z",
+		"end": "2017-08-31T05:28:05.579Z",
+		"duration": 12
+	},
+	"tests": [
+		{
+			"title": "should be equal to [ 'world', 'yeah', 'ugh', 'hello' ]",
+			"fullTitle": "kley `kley( { 'hello': 'world' }, 'yeah', [ 'ugh' ], { 'hello': true } )` should be equal to [ 'world', 'yeah', 'ugh', 'hello' ]",
+			"duration": 5,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to [ 'world', 'yeah', 'ugh', 'hello' ]",
+			"fullTitle": "kley `kley( { 'hello': 'world' }, 'yeah', [ 'ugh' ], { 'hello': true } )` should be equal to [ 'world', 'yeah', 'ugh', 'hello' ]",
+			"duration": 5,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }
