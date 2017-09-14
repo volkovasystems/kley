@@ -81,7 +81,7 @@ const kley = function kley( list ){
 	*/
 
 	return outre( plough( plough( arguments ).filter( truly ).map( ( item ) => {
-		if( protype( item, STRING ) ){
+		if( typeof item == "string" ){
 			return item;
 
 		}else if( protype( item, OBJECT, FUNCTION ) ){

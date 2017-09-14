@@ -45,13 +45,13 @@
 
 	@include:
 		{
-			"assert": "should",
+			"assert": "should/as-function",
 			"kley": "kley"
 		}
 	@end-include
 */
 
-const assert = require( "should" );
+const assert = require( "should/as-function" );
 
 //: @server:
 const kley = require( "./kley.js" );
